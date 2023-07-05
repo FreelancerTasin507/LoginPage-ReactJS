@@ -1,0 +1,59 @@
+:root {
+  --background: rgba(230, 230, 230);
+  --shadow1: rgba(119, 119, 119, 0.5);
+  --shadow2: rgba(225, 225, 225, 0.85);
+}
+
+* {
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+.border-bg {
+  background: var(--background);
+}
+.container {
+  box-shadow: 15px 15px 10px 5px var(--shadow1),
+    -10px -10px 10px 5px var(--shadow2), inset 15px 15px 10px 5px var(--shadow1),
+    inset -10px -10px 10px 5px var(--shadow2);
+  border-radius: 120px 0px 120px 0px;
+}
+
+.input-field {
+  box-shadow: 5px 10px 8px 0px var(--shadow1), -5px 10px 8px 0px var(--shadow2),
+    inset 5px 10px 5px 0px var(--shadow1),
+    inset -5px -10px 2px 0px var(--shadow2);
+}
+.input-field:active {
+  box-shadow: 5px 5px 5px 0px var(--shadow1), -5px 5px 5px 0px var(--shadow2),
+    inset 5px 5px 5px 0px var(--shadow1), inset -5px -5px 2px 0px var(--shadow2);
+}
+
+.button {
+  box-shadow: 10px 10px 10px 2px var(--shadow1),
+    -5px -5px 7px 2px var(--shadow2);
+}
+.button:active {
+  box-shadow: 5px 5px 5px 2px var(--shadow1),
+    -5px -5px 5px 2px var(--shadow2) inset 5px 5px 5px 2px var(--shadow1) inset -5px -5px
+      5px 2px var(--shadow2);
+}
+
+.icons {
+  box-shadow: 5px 5px 5px 2px var(--shadow1), -2px -2px 5px 2px var(--shadow2),
+    inset 3px 3px 5px 2px var(--shadow1), inset -2px -2px 5px 2px var(--shadow2);
+  padding: 12px;
+}
+
+.facebook {
+  color: rgb(13, 16, 233);
+}
+.google {
+  color: rgb(228, 9, 9);
+}
+.twitter {
+  color: rgb(9, 177, 228);
+}
+.instagram {
+  color: rgb(240, 10, 221);
+}
